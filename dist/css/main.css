@@ -21,9 +21,10 @@ body {
   justify-content: center;
   height: auto;
   display: grid;
-  border-radius: 5px;
+  grid-template-columns: 50% 50%;
   grid-template-areas: "join join " "subscribe about";
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px; }
   .container > div {
     padding: 40px 30px; }
   .container .join {
