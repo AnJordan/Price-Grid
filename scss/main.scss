@@ -1,0 +1,137 @@
+@import"utilities";
+
+// Root Styles
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1.5;
+
+}
+
+// Body Styles
+
+body {
+  background: $l-grey;
+  font-family: $karla;
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  place-items: center center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 55%;
+  margin: 150px auto;
+  justify-content: center;
+  height: auto;
+  display: grid;
+  border-radius: 5px;
+  grid-template-areas:
+    "join join "
+    "subscribe about";
+
+    &>div {
+      padding: 40px 30px;
+    }
+
+
+
+
+
+  .join {
+    grid-area: join;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+
+    h2{
+      color: $cyan;
+      line-height: 1.8;
+    }
+    h3{
+      color: $b-yellow;
+      line-height: 1.7;
+      margin-top: 5px;
+    }
+    p{
+      color: $blugrey;
+      line-height: 1.5;
+      margin-top: 5px;
+    }
+
+  }
+
+
+
+
+}
+
+.subscribe, .about {
+  color: #fff;
+}
+
+.subscribe {
+  grid-area: subscribe;
+  background: $cyan;
+  border-radius: 0 0 0 5px;
+
+
+
+  h3{
+    padding-bottom: 20px;
+  }
+
+  .price{
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .pm{
+    font-weight: 400;
+    color: $l-grey;
+    padding-left: 5px;
+    font-size: small;
+
+  }
+
+  p{
+    margin: 10px;
+    font-weight: 200;
+
+  }
+
+  button{
+    display: block;
+    width: 95%;
+    margin-top: 7%;
+    background-color: $b-yellow;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding:5px 0;
+    border: none;
+    border-radius: 5px;
+
+    &:hover{
+      background-color: ;
+    }
+
+
+  }
+
+
+}
+
+.about {
+  grid-area: about;
+  background: #4bbebc;
+  border-radius: 0 0 5px 0;
+
+  ul{
+    list-style-type: none;
+
+  }
+
+}

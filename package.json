@@ -1,0 +1,15 @@
+{
+  "name": "Price-Grid",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
