@@ -20,6 +20,7 @@ body {
   place-items: center center;
   font-size: 16px;
   font-weight: 400;
+  overflow: hidden;
 }
 
 .container {
@@ -70,6 +71,10 @@ body {
 
 .subscribe, .about {
   color: #fff;
+
+   h3 {
+     padding-bottom: 20px;
+   }
 }
 
 .subscribe {
@@ -79,9 +84,7 @@ body {
 
 
 
-  h3{
-    padding-bottom: 20px;
-  }
+
 
   .price{
     font-size: 30px;
@@ -105,7 +108,7 @@ body {
   button{
     display: block;
     width: 95%;
-    margin-top: 7%;
+    margin-top: 10%;
     background-color: $b-yellow;
     color: #fff;
     font-size: 20px;
@@ -115,7 +118,8 @@ body {
     border-radius: 5px;
 
     &:hover{
-      background-color: ;
+      background-color: $h-yellow;
+      color: $l-grey;
     }
 
 
@@ -124,6 +128,7 @@ body {
 
 }
 
+// Section: About/Why
 .about {
   grid-area: about;
   background: #4bbebc;
@@ -131,7 +136,17 @@ body {
 
   ul{
     list-style-type: none;
+    padding:0;
+    li{
+      font-size: small;
+      color: $l-grey;
+    }
+
 
   }
 
+}
+// Media query
+@media(max-width:375px){
+  
 }

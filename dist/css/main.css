@@ -12,7 +12,8 @@ body {
   margin: 0 auto;
   place-items: center center;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow: hidden; }
 
 .container {
   max-width: 55%;
@@ -42,13 +43,13 @@ body {
 
 .subscribe, .about {
   color: #fff; }
+  .subscribe h3, .about h3 {
+    padding-bottom: 20px; }
 
 .subscribe {
   grid-area: subscribe;
   background: #2ab2af;
   border-radius: 0 0 0 5px; }
-  .subscribe h3 {
-    padding-bottom: 20px; }
   .subscribe .price {
     font-size: 30px;
     font-weight: 700; }
@@ -63,7 +64,7 @@ body {
   .subscribe button {
     display: block;
     width: 95%;
-    margin-top: 7%;
+    margin-top: 10%;
     background-color: #c0df34;
     color: #fff;
     font-size: 20px;
@@ -71,10 +72,17 @@ body {
     padding: 5px 0;
     border: none;
     border-radius: 5px; }
+    .subscribe button:hover {
+      background-color: #aec837;
+      color: #e5eff5; }
 
 .about {
   grid-area: about;
   background: #4bbebc;
   border-radius: 0 0 5px 0; }
   .about ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0; }
+    .about ul li {
+      font-size: small;
+      color: #e5eff5; }
