@@ -34,9 +34,9 @@ body {
     "join join "
     "subscribe about";
 
-    &>div {
-      padding: 40px 30px;
-    }
+  &>div {
+    padding: 40px 30px;
+  }
 
 
 
@@ -47,16 +47,18 @@ body {
     background: #fff;
     border-radius: 5px 5px 0 0;
 
-    h2{
+    h2 {
       color: $cyan;
       line-height: 1.8;
     }
-    h3{
+
+    h3 {
       color: $b-yellow;
       line-height: 1.7;
       margin-top: 5px;
     }
-    p{
+
+    p {
       color: $blugrey;
       line-height: 1.5;
       margin-top: 5px;
@@ -69,12 +71,13 @@ body {
 
 }
 
-.subscribe, .about {
+.subscribe,
+.about {
   color: #fff;
 
-   h3 {
-     padding-bottom: 20px;
-   }
+  h3 {
+    padding-bottom: 20px;
+  }
 }
 
 .subscribe {
@@ -86,26 +89,26 @@ body {
 
 
 
-  .price{
+  .price {
     font-size: 30px;
     font-weight: 700;
   }
 
-  .pm{
+  .pm {
     font-weight: 400;
     color: $l-grey;
     padding-left: 5px;
-    font-size: small;
+
 
   }
 
-  p{
-    margin: 10px;
+  p {
+    margin: 10px 0;
     font-weight: 200;
 
   }
 
-  button{
+  button {
     display: block;
     width: 95%;
     margin-top: 10%;
@@ -113,11 +116,12 @@ body {
     color: #fff;
     font-size: 20px;
     text-align: center;
-    padding:5px 0;
+    padding: 5px 0;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
 
-    &:hover{
+    &:hover {
       background-color: $h-yellow;
       color: $l-grey;
     }
@@ -128,16 +132,18 @@ body {
 
 }
 
+
 // Section: About/Why
 .about {
   grid-area: about;
   background: #4bbebc;
   border-radius: 0 0 5px 0;
 
-  ul{
+  ul {
     list-style-type: none;
-    padding:0;
-    li{
+    padding: 0;
+
+    li {
       font-size: small;
       color: $l-grey;
     }
@@ -146,7 +152,73 @@ body {
   }
 
 }
+
+.attribution {
+  text-align: center;
+}
+
 // Media query
-@media(max-width:375px){
-  
+@media(max-width: 414px) {
+
+  body {
+    overflow: auto;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  h2 {
+    font-size: larger;
+  }
+
+  h3 {
+    font-size: medium;
+
+  }
+
+  .container {
+    max-width: 80%;
+    margin: 75px auto;
+    grid-template-areas: "join"
+      "subscribe"
+      "about";
+
+    &>div {
+      padding: 20px 20px;
+    }
+  }
+
+  .join {
+
+    h2,
+    h3 {
+      padding-bottom: 10px;
+    }
+  }
+
+  .subscribe,
+  .about {
+    h3 {
+      padding-bottom: 10px;
+    }
+  }
+
+  .subscribe {
+    border-radius: 0;
+
+
+    p {
+      margin: 5px 0;
+
+    }
+
+  }
+
+  // Section: About/Why
+  .about {
+    border-radius: 0 0 5px 5px;
+
+  }
+
+
+
 }
