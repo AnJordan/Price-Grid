@@ -22,7 +22,8 @@ body {
   height: auto;
   display: grid;
   border-radius: 5px;
-  grid-template-areas: "join join " "subscribe about"; }
+  grid-template-areas: "join join " "subscribe about";
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
   .container > div {
     padding: 40px 30px; }
   .container .join {
@@ -64,7 +65,7 @@ body {
     font-weight: 200; }
   .subscribe button {
     display: block;
-    width: 95%;
+    width: 85%;
     margin-top: 10%;
     background-color: #c0df34;
     color: #fff;
